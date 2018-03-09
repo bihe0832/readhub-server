@@ -47,28 +47,23 @@
 
 </style>
 <script type="text/javascript">
+// //1. 判断浏览器类型，决定是否展示footer
+// //2. 解析跳转参数，修改iframe链接
+
 // window.onload = function(){
 
-//   if(ZixieJS.browser.isPc()){
-//     document.getElementById("result").innerHTML = "访问来源为PC，操作系统为：" + ZixieJS.browser.getOS() +"，具体为："+ZixieJS.browser.getOSDetail();
-//     document.getElementById("isPC").innerHTML = "是";
+//   var devices = ZixieJS.browser.getDevices();
+//     if(ZixieJS.browser.devices.android == devices){
+//         document.getElementByID("tips");
+//     }else{
 
-//   }else{
-//     document.getElementById("result").innerHTML = "访问来源为移动设备，设备类型为：" + ZixieJS.browser.getDevices() + "，使用的超级app为："+ZixieJS.browser.getSuperAPP();
-//     document.getElementById("isPC").innerHTML = "否";
-
-//   }
-//   document.getElementById("os").innerHTML = ZixieJS.browser.getOSDetail();
-//   document.getElementById("devices").innerHTML = ZixieJS.browser.getDevices();
-//   document.getElementById("isApp").innerHTML = ZixieJS.browser.getSuperAPP();
+//     }
 // };
-
-</script>
 </script>
 </head>
 <body>
   <iframe src="https://readhub.me/topic/WD9ihSsRMi"></iframe>
-  <footer>安装Readhub客户端，查看更多资讯！ <a href="http://readhub.bihe0832.com/download/download.html">【点击下载】</a></footer>
+  <footer id="tips">安装Readhub客户端，查看更多资讯！ <a href="http://readhub.bihe0832.com/download/download.html">【点击下载】</a></footer>
   <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37805902" charset="UTF-8"></script>
 </body>
 </html>
