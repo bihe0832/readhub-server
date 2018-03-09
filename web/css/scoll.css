@@ -1,0 +1,25 @@
+/*Page style*/
+#__container{width:820px;padding:10px;margin:0 auto;}
+#__example{width:810px;height:460px;position:relative;}
+/* Slideshow */
+#slides{position:absolute;top:15px;left:4px;z-index:10;}
+.slides_container{width:810px;overflow:hidden;position:relative;display:none;}
+.slides_container div.slide{width:810px;height:500px;display:block;}
+/* Next/prev buttons */
+#slides .next,#slides .prev{position:absolute;top:210px;left:-45px;width:24px;height:80px;display:block;z-index:101;}
+#slides .next{left:820px;}
+/* Pagination */
+.pagination{margin:26px auto 0;width:100px; display:none;}
+/* Caption */
+.caption{
+	position:absolute;
+	height:40px;
+	width:800px;
+	padding:5px 0px;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	color:#333;
+	background-color:#fff;
+	text-shadow:none;
+}

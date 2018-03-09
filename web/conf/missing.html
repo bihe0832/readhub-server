@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<div style="text-align: center;">
+	<br><br><br><br><br><br>
+	<p style="font-size:16px;font-weight: bold;color: #333;font-family:'微软雅黑','隶书', Thomas, serif;">您访问的页面不存在！</p>
+	<br>
+	<img alt="不见了……" src="http://wekf.qq.com/web/images/code_258.jpg" />
+	<br><br>
+	<p style="font-size:16px;font-weight: normal;color: #333;font-family:'微软雅黑','隶书', Thomas, serif;">
+		系统在
+		&nbsp;<span id="RemainS" style="font-weight:bold;color:blue;">5</span>&nbsp;秒后进入
+			<a href="http://readhub.bihe0832.com">平台首页</a>；
+		您也可点击<a href="javascript:window.history.go(-1)">我要回家</a>回退到登入前的页面！
+	</p>
+</div>
+<script>
+var time = 5;
+var id=0;
+ShowTime =function GetRTime(){
+	if(time> 0){
+		document.getElementById("RemainS").innerHTML=time;
+	}else{
+		window.location="http://readhub.bihe0832.com";
+		return;
+	}
+	time = time - 1;
+	id=setTimeout("ShowTime()",1000);
+}
+ShowTime();
+</script>
+</body>
+</html>

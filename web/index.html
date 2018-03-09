@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel = "Shortcut Icon" href="http://shakeba.bihe0832.com/web/images/shakeba_32.ico" />
+    <meta name="author" CONTENT="子勰(bihe0832), code@bihe0832.com" />
+    <meta name="keywords" content="Readhub" />
+    <meta name="description" content="！" />
+<title>Readhub —— 每天几分钟，了解互联网</title>
+    <script type="text/javascript"> 
+   var system ={
+       win : false,
+       mac : false,
+       xll : false
+     };
+     // var p = navigator.platform;
+     // system.win = p.indexOf("Win") == 0;
+     // system.mac = p.indexOf("Mac") == 0;
+     // system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+     // if(!(system.win||system.mac||system.xll)){
+     //    window.location.href="./../m/index.html";
+     // }
+    </script>
+
+	<!--[if lt IE 9]>
+	  <style type="text/css">
+	    .services{
+	      display:none;
+	    }
+	    .text-center p{
+	    /*解决低版本IE没有边界问题*/
+	    	text-align: center;
+	    }
+	    .list-inline{
+	    	margin-top: 30px;
+	    }
+	    </style>
+	<![endif]-->
+	<!--[if lte IE 7]>
+	  <style type="text/css">
+		  .vert-text{
+		      margin-top: 15%;
+		  }
+		  .list-inline li{
+	    	display: inline;
+   			list-style-type: none;
+	    }
+	    .caption{
+	    	left:0;
+	    	padding:0px 0px;
+	    	margin:-10px;
+		}
+	  </style>
+	<![endif]-->
+    <script src="./js/jquery.js"></script>
+    <script type="text/javascript"> 
+		$(function(){
+			$('#slides').slides({
+				preload: false,                   
+				preloadImage: '/images/loading.gif',    
+				container: 'slides_container',       
+				generateNextPrev: false,          
+				next: 'next',                       
+				prev: 'prev',                        
+				pagination: true,                  
+				generatePagination: true,           
+				prependPagination: false,           
+				paginationClass: 'pagination',      
+				currentClass: 'current',             
+				fadeSpeed: 500,                      
+				fadeEasing: '',                      
+				slideSpeed: 500,                     
+				slideEasing: '',                   
+				start: 10,                    
+				effect: 'slide',                   
+				crossfade: false,                
+				randomize: false,                
+				play: 5000,                           
+				pause: 5000,                           
+				hoverPause: false,              
+				autoHeight: false,               
+				autoHeightSpeed: 50000,                
+				bigTarget: false,                 
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+
+
+	</script>
+</head>
+<body>
+    <!-- Side Menu -->
+    <!-- <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="icon-reorder"></i></a> -->
+    <!-- <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="icon-remove"></i></a>
+        <li class="sidebar-brand"><a href="http://wekf.qq.com">开启旅程</a></li>
+        <li class="sidebar-menu"><a href="#intro">瞧一瞧</a></li>
+        <li class="sidebar-menu"><a href="#callout">看一看</a></li>
+        <li class="sidebar-menu"><a href="#top">扫一扫</a></li>
+      </ul>
+    </div> -->
+    <!-- /Side Menu -->
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="header">
+      <div class="vert-text">
+        <img alt="扫描下载Readhub - Android" src="./../download/readhub_release_newer.png">
+       	<h3>每天几分钟，了解互联网</h3>
+      </div>
+    </div>
+    <!-- /Full Page Image Header Area -->
+  
+    <!-- Intro -->
+   <!--  <div id="intro" class="intro">
+      <div class="container">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h2>摇吧，摇吧</h2>
+        </div>
+      </div>
+    </div> -->
+    <!-- /Intro -->
+    
+    <!-- Services -->
+    <div id="services" class="services">
+<!--       <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-left">
+                <p class="lead">
+                摇吧是子勰开发的一款基于手机摇一摇功能的小游戏或者游戏助手集合。目前摇吧已经支持骰子战争。摇吧中，所有游戏的使用方法都是摇一摇，打开手机摇一摇，体验摇吧带来的乐趣吧！
+                </p>
+          </div>
+        </div>
+      
+      </div>
+    </div> -->
+    <!-- /Services -->
+     
+    <!-- Callout -->
+   <!--  <div id="callout"  class="callout">
+        <div id="__container">
+			<div id="__example">
+				<div id="slides">
+					<div class="slides_container">
+						<div class="slide">
+							<img alt="摇吧用户引导界面" src="./images/shakeba_start_all.jpg">
+							<div class="caption" style="bottom:0">
+								我们从未曾想取代你游戏的方式，我们只想带给你更多游戏的便利
+							</div>
+						</div>
+            <div class="slide">
+              <img alt="摇吧用户引导界面" src="./images/shakeba_dice_result_all.jpg">
+              <div class="caption" style="bottom:0">
+                骰子战争，摇一摇，不同的骰子，不同的玩法
+              </div>
+            </div>
+					   <div class="slide">
+              <img alt="摇吧用户引导界面" src="./images/shakeba_dice_result_all_02.jpg">
+              <div class="caption" style="bottom:0">
+                骰子战争，一样的骰子，不一样的便利
+              </div>
+            </div>
+          </div>
+       
+					<a class="prev"><img src="./images/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+					<a class="next"><img src="./images/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+				</div>
+			</div>
+		</div>
+      </div> -->
+    <!-- /Callout -->
+
+    <!-- Call to Action -->
+<!--     <div class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <h3>你下载，或者不下载，我都会在这里，静心等你！等着陪你玩游戏。</h3>
+          <div class="col-md-6 col-md-offset-3 text-center">
+
+            <a href="#top" class="btn btn-lg btn-default">扫描二维码立即下载!</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- /Call to Action -->
+
+    <!-- Footer -->
+<!--     <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <ul class="list-inline">
+                <li><a href="http://shakeba.bihe0832.com/" target="_blank">摇吧首页</a></li>
+                <li><a href="http://shakeba.bihe0832.com/download/jump.html" target="_blank">摇吧下载</a></li>
+                <li><a href="http://blog.bihe0832.com/" target="_blank">作者博客</a></li>
+                <li><a href="http://shakeba.bihe0832.com/m/help.html" target="_blank">使用说明</a></li>
+                <li><a href="http://shakeba.bihe0832.com/m/version.html" target="_blank">版本介绍</a></li>
+            </ul>
+            <hr>
+            <span>
+              Copyright &copy; 2013 - 2015 （子勰 | bihe0832） All Rights Reserved
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+ -->    <!-- /Footer -->
+
+   <!-- Bootstrap core CSS -->
+   <link href="./css/bootstrap.min.css" rel="stylesheet">
+   <!-- Add custom CSS here -->
+   <link href="./css/style.min.css" rel="stylesheet">
+   <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
+   <link href="./css/scoll.css" rel="stylesheet">
+    
+  <!-- Bootstrap core JavaScript -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/jquery.slides.min.js"></script>
+
+  <!-- Custom JavaScript for the Side Menu - Put in a custom JS file if you want to clean this up -->
+  <script>
+ 	var tips = new Array("额~ 这是不能点的!","唉~ 这真的是不能乱点的!","好吧~ 这么爱点你就点吧!","点点点点点~ 你多无聊呀!","看吧，跳到别的地方了吧");
+ 	var time = -1;
+  	function showtips (i){
+  		if(time > tips.length - 2){
+			time = 0;
+			location.hash="callout";
+			alert(tips[tips.length - 1]);
+			return 0;
+		}
+  		if(time > -1){
+  			alert(tips[time]);
+  			time ++;
+  		}else{
+  			alert(tips[i]);
+  			time = i + 1;
+  		}
+  	}
+     $("#menu-close").click(function(e) {
+          e.preventDefault();
+          $("#sidebar-wrapper").toggleClass("active");
+     });
+  </script>
+  <script>
+      $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#sidebar-wrapper").toggleClass("active");
+      });
+  </script>
+   <script>
+  //   $(function() {
+  //       $('a[href*=#]:not([href=#])').click(function() {
+  //         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+  //             || location.hostname == this.hostname) {
+
+  //           var target = $(this.hash);
+  //           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  //           if (target.length) {
+  //             $('html,body').animate({
+  //               scrollTop: target.offset().top
+  //             }, 1000);
+  //             return false;
+  //           }
+  //         }
+  //       });
+  //     });
+     </script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=25799863" charset="UTF-8"></script>
+  </body>
+</html>
