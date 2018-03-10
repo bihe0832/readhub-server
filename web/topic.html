@@ -57,12 +57,12 @@ function GetQueryString(name)
 window.onload = function(){
   var topicId = GetQueryString("id");
   document.getElementById("infoIframe").src="https://readhub.me/topic/" + topicId;
-  // var devices = ZixieJS.browser.getDevices();
-  // if(ZixieJS.browser.devices.android == devices){
+  var devices = ZixieJS.browser.getDevices();
+  if(ZixieJS.browser.devices.android == devices){
       document.getElementById("tips").style.display="inline";;
-  // }else{
-  //     document.getElementById("tips").style.display="none";;
-  // }
+  }else{
+      document.getElementById("tips").style.display="none";;
+  }
 };
 </script>
 </head>
