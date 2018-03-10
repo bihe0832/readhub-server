@@ -47,22 +47,27 @@
 
 </style>
 <script type="text/javascript">
-// //1. 判断浏览器类型，决定是否展示footer
-// //2. 解析跳转参数，修改iframe链接
+function GetQueryString(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+}
 
-// window.onload = function(){
-
-//   var devices = ZixieJS.browser.getDevices();
-//     if(ZixieJS.browser.devices.android == devices){
-//         document.getElementByID("tips");
-//     }else{
-
-//     }
-// };
+window.onload = function(){
+  var topicId = GetQueryString("id");
+  document.getElementById("infoIframe").src="https://readhub.me/topic/" + topicId;
+  var devices = ZixieJS.browser.getDevices();
+    if(ZixieJS.browser.devices.android == devices){
+        document.getElementById("tips").style.display="inline";;
+    }else{
+        document.getElementById("tips").style.display="none";;
+    }
+};
 </script>
 </head>
 <body>
-  <iframe src="https://readhub.me/topic/WD9ihSsRMi"></iframe>
+  <iframe id="infoIframe" src=""></iframe>
   <footer id="tips">安装Readhub客户端，查看更多资讯！ <a href="http://readhub.bihe0832.com/download/download.html">【点击下载】</a></footer>
   <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37805902" charset="UTF-8"></script>
 </body>
