@@ -24,7 +24,7 @@
   footer{
     position:absolute;
     bottom:0;
-    width:100%;
+    width:90%;
     background-color: #C3CFD8;
     padding: 20px;
     color: #ffffff;
@@ -57,18 +57,18 @@ function GetQueryString(name)
 window.onload = function(){
   var topicId = GetQueryString("id");
   document.getElementById("infoIframe").src="https://readhub.me/topic/" + topicId;
-  var devices = ZixieJS.browser.getDevices();
-    if(ZixieJS.browser.devices.android == devices){
-        document.getElementById("tips").style.display="inline";;
-    }else{
-        document.getElementById("tips").style.display="none";;
-    }
+  // var devices = ZixieJS.browser.getDevices();
+  // if(ZixieJS.browser.devices.android == devices){
+      document.getElementById("tips").style.display="inline";;
+  // }else{
+  //     document.getElementById("tips").style.display="none";;
+  // }
 };
 </script>
 </head>
 <body>
   <iframe id="infoIframe" src=""></iframe>
-  <footer id="tips">安装Readhub客户端，查看更多资讯！ <a href="http://readhub.bihe0832.com/download/download.html">【点击下载】</a></footer>
+  <footer id="tips">安装Readhub，查看更多！ <a href="http://readhub.bihe0832.com/download/download.html">【点击下载】</a></footer>
   <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37805902" charset="UTF-8"></script>
 </body>
 </html>
