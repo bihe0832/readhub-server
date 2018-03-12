@@ -4,24 +4,60 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
-<title>Readhub —— 每天几分钟，了解互联网</title>
+<title>Readhub - 每天几分钟，了解互联网</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="format-detection" content="telephone=no">
 <link rel="stylesheet" href="http://microdemo.bihe0832.com/res/css/global.css" type="text/css" media="screen" />
 <link rel = "Shortcut Icon" href="http://microdemo.bihe0832.com/res/images/zixie_32.ico">
+<style type="text/css">
 
+    body {
+      font-family: "Microsoft Yahei", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+      color: #333;
+      background-color: white;
+      line-height: 36px;
+      clear: both;
+      padding: 20px;
+    }
+
+   h1{
+      font-size:16px;
+      color:#000;
+      text-align: center;
+      font-weight:bold;
+    }
+
+    .divcss5{
+      text-align: center;
+      color: red;
+    }
+
+  </style>
 <script type="text/javascript" src="http://microdemo.bihe0832.com/res/js/brower.js" charset="UTF-8"></script>
 <script type="text/javascript">
+var time = 5;
+ShowTime =function GetRTime(){
+	if(time < 1){
+		window.location="https://readhub.me/";
+		return;
+	}
+	time = time - 1;
+	setTimeout("ShowTime()",1000);
+}
 window.onload = function(){
-    document.getElementById("result").innerHTML = "你好，目前我们关于" + ZixieJS.browser.getDevices() + "平台的安装包正在开发中，敬请期待，感谢您的支持！";
+    document.getElementById("result").innerHTML = "你好，目前我们关于" + ZixieJS.browser.getDevices() + 
+    			"平台的安装包正在开发中，敬请期待，感谢你的支持！页面将会在" + time +"秒后跳转到readhub首页";
+    ShowTime();
+
 };
+
 </script>
 </head>
 <body>
- <h1>Readhub —— 每天几分钟，了解互联网</h1>
+ <h1>Readhub - 每天几分钟，了解互联网</h1>
  <ul>
-    <li><span id="result"></span></li>
+    <li><span id="result" class="divcss5"></span></li>
  </ul>
  <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37805902" charset="UTF-8"></script>
  </body>
