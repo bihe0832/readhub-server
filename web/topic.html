@@ -40,7 +40,7 @@
   a:visited { text-decoration: none;color: #3F5C6A}
 
   iframe{
-    width: 100%;
+    width: 600px;
     height: 100%;
     border: 0;
   }
@@ -61,18 +61,15 @@ window.onload = function(){
   if(ZixieJS.browser.devices.android == devices){
       document.getElementById("tips").style.display="inline";;
   }else{
+    if(ZixieJS.browser.devices.ipad == devices || ZixieJS.browser.devices.iphone == devices){
+      var bodyWidth = (window.screen.availWidth/document.body.clientWidth)*100+'%';
+      document.write("<style>html,body{width:/'"+bodyWidth+"/'}</style>");
+    }
       document.getElementById("tips").style.display="none";;
+    }
   }
 };
 
-setTimeout(function(){ 　
-        //此代码pc端有用，iphone端有用，获取设备操作系统
-        var platform = navigator.platform;
-        if (platform=="iPhone") {       　
-            //设置iframe里面body的宽高即可解决
-            $("#infoIframe").contents().find("body").css("width",780);　
-        }　
-    },300);
 </script>
 </head>
 <body>
