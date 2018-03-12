@@ -64,6 +64,15 @@ window.onload = function(){
       document.getElementById("tips").style.display="none";;
   }
 };
+
+setTimeout(function(){ 　
+        //此代码pc端有用，iphone端有用，获取设备操作系统
+        var platform = navigator.platform;
+        if (platform=="iPhone") {       　
+            //设置iframe里面body的宽高即可解决
+            $("#infoIframe").contents().find("body").css("width",780);　
+        }　
+    },300);
 </script>
 </head>
 <body>
