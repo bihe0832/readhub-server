@@ -40,7 +40,7 @@
   a:visited { text-decoration: none;color: #3F5C6A}
 
   iframe{
-    width: 600px;
+    width: 100%;
     height: 100%;
     border: 0;
   }
@@ -61,11 +61,9 @@ window.onload = function(){
   if(ZixieJS.browser.devices.android == devices){
       document.getElementById("tips").style.display="inline";;
   }else{
+    document.getElementById("tips").style.display="none";
     if(ZixieJS.browser.devices.ipad == devices || ZixieJS.browser.devices.iphone == devices){
-      var bodyWidth = (window.screen.availWidth/document.body.clientWidth)*100+'%';
-      document.write("<style>html,body{width:/'"+bodyWidth+"/'}</style>");
-    }
-      document.getElementById("tips").style.display="none";;
+      document.getElementById("infoIframe").width = window.screen.availWidth;
     }
   }
 };
