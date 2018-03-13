@@ -58,15 +58,11 @@ window.onload = function(){
   var topicId = GetQueryString("id");
   document.getElementById("infoIframe").src="https://readhub.me/topic/" + topicId;
   var devices = ZixieJS.browser.getDevices();
-  if(ZixieJS.browser.devices.android == devices){
-    document.getElementById("tips").style.display="inline";;
-  }else{
-    document.getElementById("tips").style.display="inline";
-    if(ZixieJS.browser.devices.ipad == devices || ZixieJS.browser.devices.iphone == devices){
-      document.getElementById("infoIframe").width = window.screen.availWidth;
-      document.getElementById("tips").width = window.screen.availWidth;
-    }
+  if(ZixieJS.browser.devices.ipad == devices || ZixieJS.browser.devices.iphone == devices){
+    document.getElementById("infoIframe").width = window.screen.availWidth;
+    document.getElementById("tips").width = window.screen.availWidth;
   }
+
 };
 
 </script>
