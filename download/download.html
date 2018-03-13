@@ -42,30 +42,31 @@ window.onload = function(){
     PC: "http://readhub.bihe0832.com",
     winPhone: "http://readhub.bihe0832.com/download/unknow.html",
     android: "https://github.com/bihe0832/readhub-android/blob/master/demo/readhub_release_newer.apk?raw=true",
-    iphone: "http://readhub.bihe0832.com/download/unknow.html",
-    ipad: "http://readhub.bihe0832.com/download/unknow.html",
+    iphone: "https://itunes.apple.com/cn/app/readhub%E7%A4%BE%E5%8C%BA%E7%89%88/id1358100162?mt=8",
+    ipad: "https://itunes.apple.com/cn/app/readhub%E7%A4%BE%E5%8C%BA%E7%89%88/id1358100162?mt=8",
     unknow: "http://readhub.bihe0832.com",
   };
   if(ZixieJS.browser.isPc()){
       window.location.href = MultiQrcodeLink.PC;
   }else{
     var app = ZixieJS.browser.getSuperAPP();
-    if(ZixieJS.browser.app.wechat == app){
-      document.getElementById("tips").innerHTML = "由于微信平台限制，系统无法主动下载，请点击右上角选择用系统浏览器打开链接下载应用！";
-    }else{
-      var devices = ZixieJS.browser.getDevices();
-      if(ZixieJS.browser.devices.ipad == devices){
+    var devices = ZixieJS.browser.getDevices();
+    if(ZixieJS.browser.devices.ipad == devices){
         window.location.href = MultiQrcodeLink.ipad;
       }else if(ZixieJS.browser.devices.iphone == devices){
         window.location.href = MultiQrcodeLink.iphone;
       }else if(ZixieJS.browser.devices.android == devices){
-        window.location.href = MultiQrcodeLink.android;
+        if(ZixieJS.browser.app.wechat == app){
+          document.getElementById("tips").innerHTML = "由于微信平台限制，系统无法主动下载，请点击右上角选择用系统浏览器打开链接下载应用！";
+        }else{
+          window.location.href = MultiQrcodeLink.android;
+        }
       }else if(ZixieJS.browser.devices.winPhone == devices){
         window.location.href = MultiQrcodeLink.winPhone;
       }else{
         window.location.href = MultiQrcodeLink.unknow;
       }
-    }
+    
   }
 };
 </script>
