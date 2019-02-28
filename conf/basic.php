@@ -16,5 +16,5 @@ define("APP_DOWNLOAD_URL", "https://github.com/bihe0832/readhub-android/blob/mas
 define("SITE_VERSION","V1.0.180309001");
 define("COPY_RIGHT", "COPYRIGHT &copy; ZIXIE ".SITE_VERSION." ALL RIGHTS RESERVED");
 define("COPY_RIGHT_SHORT", "COPYRIGHT &copy; ZIXIE ".SITE_VERSION);
-define("SOURCE_LINK", "http://readhub.bihe0832.com");
+define("SOURCE_LINK", "https://readhub.bihe0832.com");
 
